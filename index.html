@@ -117,7 +117,7 @@
                     </div>
                     <div class="card-footer">
                         <p class="preco">R$ 3.500.000</p>
-                      <button id="like-btn">❤️ <span id="like-count">0</span></button>
+                      <button id="like">❤️ <span id="like-count">0</span></button>
     <button>👍 <span>0</span></button>
                     </div>
                 </div>
@@ -176,12 +176,8 @@
             const botao = document.getElementById('like-btn');
 const contador = document.getElementById('like-count');
 
-let quantidadeLikes = 0;
-
-botao.addEventListener('click', function() {
-    quantidadeLikes++;
-    contador.textContent = quantidadeLikes;
-});
+let contador = document.querySelector("#like")
+contador.q
 
             modalMensagem.textContent = `Preencha seus dados abaixo para receber a ficha técnica completa e detalhes sobre o ${nomeCarro}.`;
             modal.style.display = 'flex';
