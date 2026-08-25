@@ -192,12 +192,21 @@
     </script>
 </body>
 <script>
-    const botao = document.querySelector("button");
-    botao.addEventListener("click", botaoClicado);
-   function botaoClicado() {
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
+  <button id="like-btn">Curtir</button>
+<span id="like-count">0</span> curtidas
+
+<script>
+  const botao = document.getElementById('like-btn');
+  const contador = document.getElementById('like-count');
+  
+  let quantidadeLikes = 0;
+
+  botao.addEventListener('click', function() {
+    quantidadeLikes++;
+    contador.textContent = quantidadeLikes;
+  });
+</script>
+
 </script>
 </html>
 <button></button>
